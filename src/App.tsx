@@ -1,9 +1,11 @@
 import React from "react";
+import {ConfigProvider} from "antd";
+import {MainLayout} from "src/layouts/MainLayout/MainLayout";
 
 export const App:React.FC = () => {
   return (
-    <div>
-      <span>123</span>
-    </div>
+    <ConfigProvider>
+      <MainLayout />
+    </ConfigProvider>
   )
 }
